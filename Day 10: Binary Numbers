@@ -1,0 +1,33 @@
+#!/bin/python3
+
+import math
+import os
+import random
+import re
+import sys
+
+n=int(input())
+num=n
+lst=[]
+count=1
+while(num>0):
+    lst.append(num%2)
+    
+    num=int(num/2)
+for i in range(0,len(lst)-1):
+    if lst[i]+lst[i+1]==2 :
+        
+        count+=1
+    else:
+        count=1
+        
+lst=lst[::-1]
+print(count)
+
+
+    
+
+    
+    
+
+
